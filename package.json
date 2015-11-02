@@ -1,0 +1,32 @@
+{
+  "name": "mooxe-docker-gopm",
+  "version": "0.0.0",
+  "description": "docker image for gopm application of mooxe",
+  "author": "FooTearth <footearth@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mooxe000/mooxe-docker-gopm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mooxe000/mooxe-docker-gopm/issues"
+  },
+  "homepage": "https://github.com/Mooxe000/mooxe-docker-gopm",
+  "Keywords": [
+    "docker",
+    "daocloud",
+    "image"
+  ],
+  "bin": {},
+  "scripts": {
+    "build": "docker build -t mooxe/gopm .",
+    "rebuild": "docker build --no-cache -t mooxe/gopm .",
+    "in": "docker run --name=gopm --rm -ti -v `pwd`:/root/gopm mooxe/gopm /bin/bash",
+    "push": "docker push mooxe/gopm",
+    "test": "echo 'hello'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "shelljs": "^0.4.0"
+  }
+}
