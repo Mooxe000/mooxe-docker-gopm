@@ -11,3 +11,5 @@ RUN \
   apt-get autoremove -y
 
 RUN go get -u github.com/gpmgo/gopm
+
+WORKDIR /root
